@@ -1,0 +1,21 @@
+{
+	"$schema": "https://json-schema.org/draft-04/schema",
+	"id": "https://raw.githubusercontent.com/tarrjue/SkillsMania-Schemas/main/Skills/prerequisite.schema.json",
+	"title": "Prerequisite",
+	"description": "Requirements for a Skill to become available",
+	"type": "object",
+	"definitions": {
+		"level_prerequisite": {
+			"description": "Level requirement for a Skill",
+			"type": "integer"
+		},
+		"skill_prerequisite": {
+			"description": "Preliminary Skill requirement for a Skill. Value should be the Skill's id property",
+			"type": "integer"
+		}
+	},
+	"oneOf": [
+		{ "$ref": "#/definitions/level_prerequisite" },
+		{ "$ref": "#/definitions/skill_prerequisite" }
+	]
+}

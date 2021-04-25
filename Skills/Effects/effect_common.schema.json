@@ -1,0 +1,13 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema",
+    "id": "https://raw.githubusercontent.com/tarrjue/SkillsMania-Schemas/main/Skills/Effects/effect_common.schema.json",
+    "title": "Common Effect Definitions",
+    "type": "object",
+    "properties": {
+        "effect_type": {
+            "type": "string",
+            "enum": ["teleport"]
+        }
+    },
+    "required": [ "effect_type" ]
+  }

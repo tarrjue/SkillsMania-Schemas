@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft-04/schema",
+	"id": "https://raw.githubusercontent.com/tarrjue/SkillsMania-Schemas/main/Skills/skill.schema.json",
+	"title": "Skill",
+	"description": "Schema definition for a single Skill",
+	"type": "object",
+	"properties": {
+		"id": {
+			"description": "Unique internal identifier for a Skill",
+			"type": "integer"
+		},
+		"title": {
+			"description": "Display Title of a Skill",
+			"type": "string"
+		},
+		"description": {
+			"description": "Display Description for a Skill",
+			"type": "string"
+		},
+		"prerequisites": {
+			"description": "Set of prerequisites that must be satisfied for this Skill",
+			"type": "array",
+			"items": {
+				"$ref": "prerequisite.schema.json"
+			}
+		},
+		"effects": {
+			"description": "Set of effects that will occur for this effect",
+			"type": "array",
+			"items": {
+				"$ref": "effect.schema.json"
+			}
+		}
+	},
+	"required": [
+		"id",
+		"title",
+		"description",
+		"effects"
+	]
+}

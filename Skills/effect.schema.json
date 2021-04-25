@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema",
+  "id": "https://raw.githubusercontent.com/tarrjue/SkillsMania-Schemas/main/Skills/effect.schema.json",
+  "title": "Effect",
+  "description": "Base Effect of a Skill",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "Effects/active_effect.schema.json" }
+  ]
+}

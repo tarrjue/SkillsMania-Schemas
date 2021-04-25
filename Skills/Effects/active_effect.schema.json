@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema",
+  "id": "https://raw.githubusercontent.com/tarrjue/SkillsMania-Schemas/main/Skills/Effects/active_effect.schema.json",
+  "title": "Passive Effect",
+  "description": "Passive Effect of a Skill",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "Active/movement_effect.schema.json" }
+  ]
+}

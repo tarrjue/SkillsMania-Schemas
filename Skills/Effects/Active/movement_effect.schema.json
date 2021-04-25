@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema",
+  "id": "https://raw.githubusercontent.com/tarrjue/SkillsMania-Schemas/main/Skills/Effects/Active/movement_effect.schema.json",
+  "title": "Passive Effect",
+  "description": "Passive Effect of a Skill",
+  "type": "object",
+  "definitions": {
+    "teleport": {
+      "description": "Teleport Effect",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "../effect_common.schema.json"
+        },
+        {
+          "properties": {
+            "distance": {
+              "description": "How far to teleport",
+              "type": "number"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "oneOf": [
+    { "$ref": "#/definitions/teleport" }
+  ]
+}

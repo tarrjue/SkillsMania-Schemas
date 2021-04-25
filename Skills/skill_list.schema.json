@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema",
+  "id": "https://raw.githubusercontent.com/tarrjue/SkillsMania-Schemas/main/Skills/skill_list.schema.json",
+  "title": "Skill List",
+  "description": "Schema definition for a group of Skills",
+  "type": "object",
+  "properties": {
+    "skill_list": {
+      "description": "A list of skills",
+      "type": "array",
+      "items": {
+        "$ref": "skill.schema.json"
+      }
+    }
+  }
+}
